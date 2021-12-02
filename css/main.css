@@ -24,14 +24,12 @@ a {
     padding-top: 20px;
     padding-bottom: 5px;
     border-bottom: #FF4622 3px;
-    
 }
-a:hover:after {
+header>nav>a:hover:after {
     content: "";
     display: block;
     width: 100%;
     border-bottom: 3px solid #FF4622;
-    margin: 0 auto;
   }
 section {
     display: inline-block;
@@ -73,5 +71,8 @@ section>div>a {
     padding-bottom: 5px;
     border: 3px solid #FF4622;
     border-radius: 5px;
-
+}
+section>div>a:hover {
+    background-color: #ff472298;
+    border: 3px solid #ff472298;
 }
