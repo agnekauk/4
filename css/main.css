@@ -1,12 +1,19 @@
+:root {
+    --orange: #FF4622;
+    --plotis: 1000px;
+    --soninis-atstumas: calc((100% - var(--plotis)) / 2 ); 
+    --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
+    --text-width: calc(var(--plotis) * 0.4);
+    --text-margin: calc(var(--plotis) * 0.1);
+    --image-width: calc(100% - var(--plotis) / 2);
+}
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header {
     display:inline-block;
-    width: 1000px;
-    margin-left: calc((100% - 1000px) / 2 );
-    margin-top: 5px;
-    margin-bottom: 10px;
+    width: var(--plotis);
+    margin-left: var(--soninis-atstumas);
 }
 header > img {
     float: left;
@@ -14,65 +21,62 @@ header > img {
 }
 nav {
     float: right;
+    margin-top: 20px;
 }
 nav > a {
-    display: inline-block;
-    float: left;
     text-decoration: none;
     color: black;
     font-size: 18px;
     line-height: 20px;
     margin-left: 35px;
-    margin-top: 20px;
+    border-bottom: 4px solid transparent;
 }
 nav > a:hover {
-    border-bottom: 3px solid #FF4622;
-    padding: 0px;
+    border-color: var(--orange);
 }
 nav > a:first-child {
-    border-bottom: 3px solid #FF4622;
-    padding: 0px;
+    margin-left:0;
+    border-color: var(--orange);    
 }
 section {
     display: inline-block;
-    float:left;
-    width: 1000px;
-    margin-left: calc((100% - 1000px) / 2 );
+    width: var(--section-width);
+    margin-left: var(--soninis-atstumas);
 }
 div {
-    display: inline-block;
-    width: 30%;
+    width: var(--text-width);
     float: left;
-    margin-top: 20px;
+    margin-top: 100px;
+    margin-right: var(--text-margin);
 }
 h1 {
     font-size: 40px;
     font-weight: lighter;
 }
 h1> span {
-    color: #FF4622;
+    color: var(--orange);
 }
 p {
-    font-size: 20px;
+    display: inline-block;
+    font-size: 18px;
     font-weight: lighter;
 }
 section>img {
-    display: inline-block;
-    width: 65%;
-    float: right;
+    width: var(--image-width);
+    float: left;
 }
 div > a {
     display: inline-block;
     float:left;
     width: 130px;
-    background-color: #FF4622;
+    background-color: var(--orange);
     color: white;
     text-decoration: none;
     text-align: center;
     padding: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 3px solid #FF4622;
+    border: 3px solid var(--orange);
     border-radius: 5px;
 }
 div > a:hover {
