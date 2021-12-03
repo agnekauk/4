@@ -28,7 +28,7 @@ nav > a {
     color: black;
     font-size: 18px;
     line-height: 20px;
-    margin-left: 35px;
+    margin-left: 20px;
     border-bottom: 4px solid transparent;
 }
 nav > a:hover {
@@ -46,12 +46,13 @@ section {
 div {
     width: var(--text-width);
     float: left;
-    margin-top: 100px;
     margin-right: var(--text-margin);
+    margin-top: 80px;
 }
 h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: lighter;
+    margin-bottom: 10px;
 }
 h1> span {
     color: var(--orange);
@@ -60,26 +61,26 @@ p {
     display: inline-block;
     font-size: 18px;
     font-weight: lighter;
-}
-section>img {
-    width: var(--image-width);
-    float: left;
+    margin-top: 10px;
 }
 div > a {
-    display: inline-block;
-    float:left;
-    width: 130px;
+    display:inline-block;
     background-color: var(--orange);
     color: white;
     text-decoration: none;
     text-align: center;
     padding: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
     border: 3px solid var(--orange);
     border-radius: 5px;
+    margin-top: 20px;
 }
 div > a:hover {
     background-color: #ff472298;
-    border: 3px solid #ff472298;
+    border-color: #ff472298;
+}
+section>img {
+    width: var(--image-width);
+    float: left;
 }
