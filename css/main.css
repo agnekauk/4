@@ -6,6 +6,7 @@ header {
     width: 1000px;
     margin-left: calc((100% - 1000px) / 2 );
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 header> img {
     float: left;
@@ -19,15 +20,13 @@ a {
     text-decoration: none;
     color: black;
     font-size: 15px;
-    line-height: 20px;
-    padding: 20px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    border-bottom: #FF4622 3px;
+    line-height: 15px;
+    margin-left: 35px;
+    margin-top: 20px;
 }
 header>nav>a:hover:after {
     content: "";
-    display: block;
+    display:block;
     width: 100%;
     border-bottom: 3px solid #FF4622;
   }
