@@ -8,13 +8,13 @@ header {
     margin-top: 5px;
     margin-bottom: 10px;
 }
-header> img {
+header > img {
     float: left;
 }
 nav {
     float: right;
 }
-header>nav>a {
+nav > a {
     display: inline-block;
     float: left;
     text-decoration: none;
@@ -24,11 +24,11 @@ header>nav>a {
     margin-left: 35px;
     margin-top: 20px;
 }
-header>nav>a:hover {
+nav > a:hover {
     border-bottom: 3px solid #FF4622;
     padding: 0px;
-  }
-header>nav>a:first-child {
+}
+nav > a:first-child {
     border-bottom: 3px solid #FF4622;
     padding: 0px;
 }
@@ -61,7 +61,7 @@ section>img {
     float: right;
     margin-right: 5%;
 }
-section>div>a {
+div > a {
     display: inline-block;
     float:left;
     width: 35%;
@@ -75,7 +75,7 @@ section>div>a {
     border: 3px solid #FF4622;
     border-radius: 5px;
 }
-section>div>a:hover {
+div > a:hover {
     background-color: #ff472298;
     border: 3px solid #ff472298;
 }
