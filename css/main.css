@@ -24,12 +24,14 @@ a {
     margin-left: 35px;
     margin-top: 20px;
 }
-header>nav>a:hover:after {
-    content: "";
-    display:block;
-    width: 100%;
+header>nav>a:hover {
     border-bottom: 3px solid #FF4622;
+    padding: 0px;
   }
+header>nav>a:first-child {
+    border-bottom: 3px solid #FF4622;
+    padding: 0px;
+}
 section {
     display: inline-block;
     float:left;
