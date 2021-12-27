@@ -88,21 +88,24 @@ section > img {
 
 @media (max-width: 1000px) {
     :root {
-        --plotis: 900px;
+        --plotis: 800px;
         --soninis-atstumas: calc((100% - var(--plotis)) / 2);
         --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
         --text-width: calc(var(--plotis) * 0.4);
-        --text-margin: calc(var(--plotis) * 0.1);
+        --text-margin: calc(var(--plotis) * 0.05);
         --image-width: calc(100% - var(--plotis) / 2);
     }
     div {
-        margin-top: 40px;
+        margin-top: 20px;
+    }
+    h1 {
+        margin-top: 10px;
     }
 }
 
 @media (max-width: 900px) {
     :root {
-        --plotis: 800px;
+        --plotis: 700px;
         --soninis-atstumas: calc((100% - var(--plotis)) / 2);
         --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
         --text-width: calc(var(--plotis) * 0.4);
@@ -121,17 +124,7 @@ section > img {
 }
 @media (max-width: 800px) {
     :root {
-        --plotis: 700px;
-        --soninis-atstumas: calc((100% - var(--plotis)) / 2);
-        --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
-        --text-width: calc(var(--plotis) * 0.4);
-        --text-margin: calc(var(--plotis) * 0.1);
-        --image-width: calc(100% - var(--plotis) / 2);
-    }
-}
-@media (max-width: 730px) {
-    :root {
-        --plotis: 100vh;
+        --plotis: 600px;
         --soninis-atstumas: calc((100% - var(--plotis)) / 2);
         --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
         --text-width: calc(var(--plotis) * 0.4);
@@ -139,8 +132,62 @@ section > img {
         --image-width: calc(100% - var(--plotis) / 2);
     }
     header > img {
+        height: 30px;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav > a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 730px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0;
+    }
+    header > img {
+        display: flex;
+        float: none;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 0;
+        margin-right: 5%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 10%;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 30px 0;
+        text-align: center;
+    }
+    section > img {
+        width: 100%;
+    }
+    div > a {
         display: flex;
         justify-content: center;
-        float: none;
+        width: 25%;
     }
 }
