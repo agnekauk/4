@@ -1,17 +1,18 @@
 :root {
-    --orange: #FF4622;
+    --orange: #ff4622;
     --plotis: 1000px;
-    --soninis-atstumas: calc((100% - var(--plotis)) / 2 ); 
+    --soninis-atstumas: calc((100% - var(--plotis)) / 2);
     --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
     --text-width: calc(var(--plotis) * 0.4);
     --text-margin: calc(var(--plotis) * 0.1);
     --image-width: calc(100% - var(--plotis) / 2);
 }
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
 }
 header {
-    display:inline-block;
+    display: inline-block;
     width: var(--plotis);
     margin-left: var(--soninis-atstumas);
 }
@@ -35,8 +36,8 @@ nav > a:hover {
     border-color: var(--orange);
 }
 nav > a:first-child {
-    margin-left:0;
-    border-color: var(--orange);    
+    margin-left: 0;
+    border-color: var(--orange);
 }
 section {
     display: inline-block;
@@ -54,7 +55,7 @@ h1 {
     font-weight: lighter;
     margin-bottom: 10px;
 }
-h1> span {
+h1 > span {
     color: var(--orange);
 }
 p {
@@ -64,7 +65,7 @@ p {
     margin-top: 10px;
 }
 div > a {
-    display:inline-block;
+    display: inline-block;
     background-color: var(--orange);
     color: white;
     text-decoration: none;
@@ -80,7 +81,113 @@ div > a:hover {
     background-color: #ff472298;
     border-color: #ff472298;
 }
-section>img {
+section > img {
     width: var(--image-width);
     float: left;
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --plotis: 800px;
+        --soninis-atstumas: calc((100% - var(--plotis)) / 2);
+        --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
+        --text-width: calc(var(--plotis) * 0.4);
+        --text-margin: calc(var(--plotis) * 0.05);
+        --image-width: calc(100% - var(--plotis) / 2);
+    }
+    div {
+        margin-top: 20px;
+    }
+    h1 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --plotis: 700px;
+        --soninis-atstumas: calc((100% - var(--plotis)) / 2);
+        --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
+        --text-width: calc(var(--plotis) * 0.4);
+        --text-margin: calc(var(--plotis) * 0.1);
+        --image-width: calc(100% - var(--plotis) / 2);
+    }
+    nav > a {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 800px) {
+    :root {
+        --plotis: 600px;
+        --soninis-atstumas: calc((100% - var(--plotis)) / 2);
+        --section-width: calc(var(--plotis)) + var(--soninis-atstumas);
+        --text-width: calc(var(--plotis) * 0.4);
+        --text-margin: calc(var(--plotis) * 0.1);
+        --image-width: calc(100% - var(--plotis) / 2);
+    }
+    header > img {
+        height: 30px;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav > a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 730px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0;
+    }
+    header > img {
+        display: flex;
+        float: none;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 0;
+        margin-right: 5%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 10%;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 30px 0;
+        text-align: center;
+    }
+    section > img {
+        width: 100%;
+    }
+    div > a {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+    }
 }
